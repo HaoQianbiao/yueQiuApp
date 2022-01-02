@@ -19,13 +19,6 @@
     
     self.view.backgroundColor = [UIColor orangeColor];
     
-//    UITabBarItem* tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemContacts tag:101];
-//    
-//    //按钮右上角的提示信息
-//    //通常用来提示未读消息
-//    tabBarItem.badgeValue = @"22";
-//    
-//    self.tabBarItem = tabBarItem;
 }
 
 /*
