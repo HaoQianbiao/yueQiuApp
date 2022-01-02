@@ -6,10 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TrainView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TrainViewController : UIViewController
+
+@property (nonatomic, strong) TrainView *trainView;
 
 @end
 

@@ -11,6 +11,8 @@
 		830E94B6278049AA00846115 /* TrainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830E94B5278049AA00846115 /* TrainViewController.m */; };
 		830E94B9278049B400846115 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830E94B8278049B400846115 /* NewsViewController.m */; };
 		830E94BC278049C100846115 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830E94BB278049C100846115 /* MyViewController.m */; };
+		83293CBF27818E7B00800700 /* TrainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83293CBE27818E7B00800700 /* TrainView.m */; };
+		83293CC22781912D00800700 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83293CC12781912D00800700 /* 3.jpg */; };
 		83C6A27327781E1A003AD7D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C6A27227781E1A003AD7D4 /* AppDelegate.m */; };
 		83C6A27627781E1A003AD7D4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C6A27527781E1A003AD7D4 /* SceneDelegate.m */; };
 		83C6A27927781E1A003AD7D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C6A27827781E1A003AD7D4 /* ViewController.m */; };
@@ -49,6 +51,9 @@
 		830E94B8278049B400846115 /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		830E94BA278049C100846115 /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		830E94BB278049C100846115 /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		83293CBD27818E7B00800700 /* TrainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrainView.h; sourceTree = "<group>"; };
+		83293CBE27818E7B00800700 /* TrainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainView.m; sourceTree = "<group>"; };
+		83293CC12781912D00800700 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		83C6A26E27781E1A003AD7D4 /* 约球.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "约球.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C6A27127781E1A003AD7D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		83C6A27227781E1A003AD7D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +109,8 @@
 		830E94AA2780442B00846115 /* Train */ = {
 			isa = PBXGroup;
 			children = (
+				83293CBC27818E4D00800700 /* TrainModel */,
+				83293CBB27818E3C00800700 /* TrainView */,
 				830E94AE2780449A00846115 /* TrainController */,
 			);
 			path = Train;
@@ -161,9 +168,34 @@
 			path = MyController;
 			sourceTree = "<group>";
 		};
+		83293CBB27818E3C00800700 /* TrainView */ = {
+			isa = PBXGroup;
+			children = (
+				83293CBD27818E7B00800700 /* TrainView.h */,
+				83293CBE27818E7B00800700 /* TrainView.m */,
+			);
+			path = TrainView;
+			sourceTree = "<group>";
+		};
+		83293CBC27818E4D00800700 /* TrainModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TrainModel;
+			sourceTree = "<group>";
+		};
+		83293CC0278190ED00800700 /* 图片 */ = {
+			isa = PBXGroup;
+			children = (
+				83293CC12781912D00800700 /* 3.jpg */,
+			);
+			path = "图片";
+			sourceTree = "<group>";
+		};
 		83C6A26527781E1A003AD7D4 = {
 			isa = PBXGroup;
 			children = (
+				83293CC0278190ED00800700 /* 图片 */,
 				83C6A27027781E1A003AD7D4 /* 约球 */,
 				83C6A28C27781E1B003AD7D4 /* 约球Tests */,
 				83C6A29627781E1B003AD7D4 /* 约球UITests */,
@@ -342,6 +374,7 @@
 				83C6A28127781E1B003AD7D4 /* LaunchScreen.storyboard in Resources */,
 				83C6A27E27781E1B003AD7D4 /* Assets.xcassets in Resources */,
 				83C6A27C27781E1A003AD7D4 /* Main.storyboard in Resources */,
+				83293CC22781912D00800700 /* 3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +403,7 @@
 				830E94B6278049AA00846115 /* TrainViewController.m in Sources */,
 				830E94BC278049C100846115 /* MyViewController.m in Sources */,
 				83C6A27327781E1A003AD7D4 /* AppDelegate.m in Sources */,
+				83293CBF27818E7B00800700 /* TrainView.m in Sources */,
 				830E94B32780488500846115 /* HomePageViewController.m in Sources */,
 				83C6A28427781E1B003AD7D4 /* main.m in Sources */,
 				83C6A27627781E1A003AD7D4 /* SceneDelegate.m in Sources */,
