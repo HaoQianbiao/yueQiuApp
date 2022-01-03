@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Masonry.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UILabel *coursesLabel;
 @property (nonatomic, strong) UILabel *coachLabel;
 @property (nonatomic, strong) UILabel *rankingLabel;
+@property (nonatomic, strong) UILabel *topLine;
 
 @end
 
