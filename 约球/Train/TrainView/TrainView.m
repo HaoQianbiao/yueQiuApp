@@ -96,6 +96,85 @@
         make.height.equalTo(@1);
         make.width.equalTo(@(myWidth));
     }];
+    
+    self.choiceButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [self.choiceButton setTitle:@"全部" forState:UIControlStateNormal];
+    [self.choiceButton addTarget:self action:@selector(showProject:) forControlEvents:UIControlEventTouchUpInside];
+    self.choiceButton.tintColor = [UIColor blackColor];
+    [self.choiceButton.titleLabel setFont:[UIFont systemFontOfSize:22]];
+    self.choiceButton.layer.cornerRadius = 6;
+    self.choiceButton.layer.masksToBounds = YES;
+    self.choiceButton.layer.borderWidth = 0.5;
+    [self addSubview:self.choiceButton];
+    [self.choiceButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.coachLabel).offset(myWidth / 6);
+        make.centerX.equalTo(self);
+        make.width.equalTo(@(myWidth));
+        make.height.equalTo(@(myHeight / 17));
+    }];
+    
+    self.projectArray = [[NSArray alloc] initWithObjects:@"全部", @"篮球", @"足球", @"乒乓球", @"羽毛球", nil];
+    self.projectIsShow = 0;
+    
+    self.projectTableView = [[UITableView alloc] init];
+    self.projectTableView.delegate = self;
+    self.projectTableView.dataSource = self;
+    [self addSubview:self.projectTableView];
+    [self.projectTableView registerClass:[ShowProjectTableViewCell class] forCellReuseIdentifier:@"project"];
+    //设置tableview的默认选中
+    [self.projectTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:YES scrollPosition:UITableViewScrollPositionNone];
+    
+    return;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    ShowProjectTableViewCell *projectCell = [self.projectTableView dequeueReusableCellWithIdentifier:@"project" forIndexPath:indexPath];
+    projectCell.projectLabel.text = self.projectArray[indexPath.row];
+    return projectCell;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.projectArray.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return myHeight / 17;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ShowProjectTableViewCell *nowCell = [self.projectTableView cellForRowAtIndexPath:indexPath];
+    [self.choiceButton setTitle:nowCell.projectLabel.text forState:UIControlStateNormal];
+    [self.projectTableView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.choiceButton).offset(myHeight / 17);
+        make.left.equalTo(@0);
+        make.width.equalTo(@0);
+        make.height.equalTo(@0);
+    }];
+    self.projectIsShow = !self.projectIsShow;
+}
+
+- (void)showProject:(UIButton *)button {
+    if (self.projectIsShow) {
+        [self.projectTableView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.choiceButton).offset(myHeight / 17);
+            make.left.equalTo(@0);
+            make.width.equalTo(@0);
+            make.height.equalTo(@0);
+        }];
+    } else {
+        [self.projectTableView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.choiceButton).offset(myHeight / 17);
+            make.left.equalTo(@0);
+            make.width.equalTo(@(myWidth));
+            make.height.equalTo(@(myHeight / 5));
+        }];
+    }
+    self.projectIsShow = !self.projectIsShow;
+    return;
 }
 
 /*

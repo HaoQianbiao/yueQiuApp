@@ -7,10 +7,11 @@
 
 #import <UIKit/UIKit.h>
 #import "Masonry.h"
+#import "ShowProjectTableViewCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TrainView : UIView
+@interface TrainView : UIView<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UIButton *coursesButton;
 @property (nonatomic, strong) UIButton *coachButton;
@@ -19,6 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UILabel *coachLabel;
 @property (nonatomic, strong) UILabel *rankingLabel;
 @property (nonatomic, strong) UILabel *topLine;
+
+@property (nonatomic, strong) UIButton *choiceButton;
+@property (nonatomic, strong) UITableView *projectTableView;
+@property (nonatomic, strong) ShowProjectTableViewCell *projectCell;
+@property (nonatomic, strong) NSArray *projectArray;
+@property BOOL projectIsShow;  //用于判断选择项目栏是否展开
 
 @end
 

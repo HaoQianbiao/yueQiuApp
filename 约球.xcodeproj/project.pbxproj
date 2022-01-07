@@ -23,6 +23,7 @@
 		83C6A28E27781E1B003AD7D4 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C6A28D27781E1B003AD7D4 /* __Tests.m */; };
 		83C6A29827781E1B003AD7D4 /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C6A29727781E1B003AD7D4 /* __UITests.m */; };
 		83C6A29A27781E1B003AD7D4 /* __UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C6A29927781E1B003AD7D4 /* __UITestsLaunchTests.m */; };
+		83EEB26F27882BF400BC48D7 /* ShowProjectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EEB26E27882BF400BC48D7 /* ShowProjectTableViewCell.m */; };
 		E54920A0F57F7942B6E7AFCA /* libPods-约球.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE4A3A1D079ECCF24498F31 /* libPods-约球.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,8 @@
 		83C6A29327781E1B003AD7D4 /* 约球UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "约球UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C6A29727781E1B003AD7D4 /* __UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITests.m; sourceTree = "<group>"; };
 		83C6A29927781E1B003AD7D4 /* __UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITestsLaunchTests.m; sourceTree = "<group>"; };
+		83EEB26D27882BF400BC48D7 /* ShowProjectTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowProjectTableViewCell.h; sourceTree = "<group>"; };
+		83EEB26E27882BF400BC48D7 /* ShowProjectTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowProjectTableViewCell.m; sourceTree = "<group>"; };
 		925762B5E0B3B43ADAECBDC5 /* Pods-约球.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-约球.release.xcconfig"; path = "Target Support Files/Pods-约球/Pods-约球.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +196,8 @@
 		83293CBC27818E4D00800700 /* TrainModel */ = {
 			isa = PBXGroup;
 			children = (
+				83EEB26D27882BF400BC48D7 /* ShowProjectTableViewCell.h */,
+				83EEB26E27882BF400BC48D7 /* ShowProjectTableViewCell.m */,
 			);
 			path = TrainModel;
 			sourceTree = "<group>";
@@ -289,7 +294,6 @@
 				5186FD724270FD79908432E2 /* Pods-约球.debug.xcconfig */,
 				925762B5E0B3B43ADAECBDC5 /* Pods-约球.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -458,6 +462,7 @@
 				830E94B32780488500846115 /* HomePageViewController.m in Sources */,
 				83C6A28427781E1B003AD7D4 /* main.m in Sources */,
 				83C6A27627781E1A003AD7D4 /* SceneDelegate.m in Sources */,
+				83EEB26F27882BF400BC48D7 /* ShowProjectTableViewCell.m in Sources */,
 				830E94B9278049B400846115 /* NewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
