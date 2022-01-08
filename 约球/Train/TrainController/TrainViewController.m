@@ -7,6 +7,9 @@
 
 #import "TrainViewController.h"
 
+#define myWidth [UIScreen mainScreen].bounds.size.width
+#define myHeight [UIScreen mainScreen].bounds.size.height
+
 @interface TrainViewController ()
 
 @end
@@ -17,7 +20,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor blueColor];
+    [self initInterface];
+}
+
+- (void)initInterface {
+    self.trainView = [[TrainView alloc] initWithFrame:CGRectMake(0, 0, myWidth, myHeight)];
+    [self.view addSubview:self.trainView];
 }
 
 /*

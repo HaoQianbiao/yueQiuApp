@@ -343,6 +343,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< HEAD
 		11338C6387716157E05D3FCA54EA93A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D80A9DD2F79DD62A18AF2EF5069D067 /* Pods-约球.release.xcconfig */;
@@ -410,6 +411,9 @@
 			name = Release;
 		};
 		C352469741B3A74ED19BE4F809ED9D7A /* Debug */ = {
+=======
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+>>>>>>> ce40941f03e5b3401a10609ecff81c18828c7816
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -462,7 +466,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+>>>>>>> ce40941f03e5b3401a10609ecff81c18828c7816
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -475,15 +483,49 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		E6DBED94D2664DF6E991E1879504DDD5 /* Debug */ = {
+=======
+		5689B70536028B61AFC9A47197395506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D98643BA30A79011275CBE433EF86F /* Masonry.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68318950C5467C8FC54AD4785C11D2BC /* Debug */ = {
+>>>>>>> ce40941f03e5b3401a10609ecff81c18828c7816
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B08E24BF911D4815749575DCDC0B3088 /* Pods-约球.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+<<<<<<< HEAD
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+=======
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+>>>>>>> ce40941f03e5b3401a10609ecff81c18828c7816
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -495,7 +537,34 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		F26A457E3AE997331A7B7AA0E1DF884C /* Release */ = {
+=======
+		7C02F194CB4B2B50EA320F9EFA7CD08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44AEC6462659DC0098D6E58E0470E73F /* Masonry.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+>>>>>>> ce40941f03e5b3401a10609ecff81c18828c7816
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -545,7 +614,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+>>>>>>> ce40941f03e5b3401a10609ecff81c18828c7816
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -557,14 +630,44 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
+=======
+		FC8B0D0F0635CE913CA66CBF78EBA995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D80A9DD2F79DD62A18AF2EF5069D067 /* Pods-约球.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+>>>>>>> ce40941f03e5b3401a10609ecff81c18828c7816
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		04B6B0C97F51F95FB5FBA613FF05FEC7 /* Build configuration list for PBXNativeTarget "Pods-约球" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
+<<<<<<< HEAD
 				E6DBED94D2664DF6E991E1879504DDD5 /* Debug */,
 				11338C6387716157E05D3FCA54EA93A2 /* Release */,
+=======
+				68318950C5467C8FC54AD4785C11D2BC /* Debug */,
+				FC8B0D0F0635CE913CA66CBF78EBA995 /* Release */,
+>>>>>>> ce40941f03e5b3401a10609ecff81c18828c7816
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -572,8 +675,13 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
+<<<<<<< HEAD
 				C352469741B3A74ED19BE4F809ED9D7A /* Debug */,
 				F26A457E3AE997331A7B7AA0E1DF884C /* Release */,
+=======
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+>>>>>>> ce40941f03e5b3401a10609ecff81c18828c7816
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
