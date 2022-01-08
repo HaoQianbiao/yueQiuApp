@@ -6,6 +6,11 @@
 //
 
 #import "HomePageViewController.h"
+#import "HomePageUIView.h"
+
+#define W [UIScreen mainScreen].bounds.size.width
+#define H [UIScreen mainScreen].bounds.size.height
+
 
 @interface HomePageViewController ()
 
@@ -18,6 +23,8 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor orangeColor];
+    HomePageUIView* homePageView = [[HomePageUIView alloc] initWithFrame:CGRectMake(0, 0, W, H)];
+    
     
 }
 
